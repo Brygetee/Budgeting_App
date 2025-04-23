@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yearly Savings Planner</title>
+        <!-- Favicon -->
+    <link type="image/png" sizes="32x32" rel="icon" href="static/favicon.ico">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-$END$
+    <div class="container">
+        <h1>Yearly Savings Planner</h1>
+
+        <p class="intro">
+            Plan your personal finances and estimate your annual savings based on your weekly income, expenses, and savings goal.
+            Enter your details below to see a customized savings summary.
+        </p>
+
+        <form method="post">
+            <label for="income">Weekly Income ($)</label>
+            <input type="number" id="income" name="income" step="0.01" min="0" required value="{{ request.form.income or '' }}">
+
+            <label for="expenses">Weekly Expenses ($)</label>
+            <input type="number" id="expenses" name="expenses" step="0.01" min="0" required value="{{ request.form.expenses or '' }}">
+
+            <label for="goal">Savings Goal for the Year ($)</label>
+            <input type="number" id="goal" name="goal" step="0.01" min="0" required value="{{ request.form.goal or '' }}">
+
+            <label for="weekly_savings">Expected Weekly Savings ($)</label>
+            <input type="number" id="weekly_savings" name="weekly_savings" step="0.01" min="0" required value="{{ request.form.weekly_savings or '' }}">
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        {% if results %}
+        <div class="results">
+            <p>{{ results }}</p>
+        </div>
+        {% endif %}
+    </div>
 </body>
 </html>

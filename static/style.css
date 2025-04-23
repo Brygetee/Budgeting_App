@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Global styles for body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F1F8F4; /* Mint Cream */
+    color: #2c3e50;
+    margin: 0;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=134045), auto;
+}
+
+/* Main container with card design */
+.container {
+    max-width: 420px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    color: #A8BCA1; /* Sage Green */
+    margin-bottom: 25px;
+}
+
+/* Introduction text styling */
+.intro {
+    font-size: 15px;
+    color: #5f6f7a;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Labels for inputs */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #7f8c8d;
+}
+
+/* Input fields */
+input[type="number"] {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 2px solid #C4D7B2; /* Pistachio */
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #2c3e50;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Focus state for inputs */
+input[type="number"]:focus {
+    border-color: #A8BCA1; /* Sage Green */
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* Submit button styling */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #A8BCA1; /* Sage Green */
+    color: #ffffff;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #8FA98F; /* Slightly darker Sage Green */
+}
+
+/* Results section styling */
+.results {
+    margin-top: 25px;
+    padding: 18px;
+    background-color: #EDE6DB; /* Warm Sand */
+    border-left: 5px solid #A8BCA1; /* Sage Green */
+    border-radius: 8px;
+}
+
+/* Results text */
+.results p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #2c3e50;
+}
+
+/* Responsive design for extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 15px 10px;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .intro {
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input[type="number"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .results p {
+        font-size: 14px;
+    }
+}
+
+/* Responsive design for small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .container {
+        padding: 20px 15px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .intro {
+        font-size: 15px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="number"] {
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 13px;
+    }
+
+    .results p {
+        font-size: 15px;
+    }
+}
+
+/* Responsive design for medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        padding: 25px 20px;
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .intro {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    input[type="number"] {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 17px;
+        padding: 14px;
+    }
+
+    .results p {
+        font-size: 16px;
+    }
+}
+
+/* Responsive design for large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        padding: 30px 25px;
+        width: 420px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .intro {
+        font-size: 15px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="number"] {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 17px;
+        padding: 14px;
+    }
+
+    .results p {
+        font-size: 16px;
+    }
+}
