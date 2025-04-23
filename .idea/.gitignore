@@ -1,0 +1,11 @@
+# Ignore PyCharm configuration files
+.idea/
+*.iml
+
+# Ignore Python bytecode files
+__pycache__/
+
+# Ignore temporary files
+*.log
+*.tmp
+
